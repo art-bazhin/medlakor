@@ -1,0 +1,30 @@
+$gutter = 30px
+
+column(w=1, l = 0, r = 0)
+  box-sizing border-box
+  display block
+  float left
+  width 100%  * w
+  padding-left ($gutter / 2)
+  padding-right ($gutter / 2)
+  margin-left 100% * l
+  margin-right 100% * r
+
+.row
+  margin-left -1 * ($gutter / 2)
+  margin-right  -1 * ($gutter / 2)
+  &:before, &:after
+    content ""
+    display table
+    height 0
+    visibility hidden
+    clear both
+    
+.container
+  width auto
+  box-sizing content-box
+  padding-left ($gutter / 2)
+  padding-right ($gutter / 2)
+  margin 0 auto
+  min-width 960px
+  max-width 1140px

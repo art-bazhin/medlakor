@@ -1,0 +1,61 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width")
+    meta(name="description" content="Научно-производственное предприятие по разработке и производству контрольных и диагностических материалов.")
+    link(href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet")
+    link(rel="icon" type="image/png" href="/assets/img/favicon.png")
+    link(href='/css/style.css', type="text/css", rel="stylesheet")
+    title Каталог | Медлакор С.-П.
+  body
+    include ../../partials/header
+    main
+      div.container
+        p.breadcrumbs 
+          a(href="../") Главная
+          span &nbsp;&nbsp;>&nbsp;&nbsp;
+          a(href="../") Каталог
+          span &nbsp;&nbsp;>&nbsp;&nbsp;Приборы
+        h1 Каталог
+        div.row
+          div.catalog__menu-wrapper
+            div.catalog__menu
+              p Контрольные и&nbsp;диагностические материалы
+              ul
+                li
+                  a(href="../hemoglobin") Для гемоглобинометрии
+                li
+                  a(href="../hematology") Для гематологии
+                li
+                  a(href="../biochemistry") Для клинической биохимии
+                li
+                  a(href="../urine") Для исследования мочи
+              p Реагенты
+              ul
+                li
+                  a(href="../reagent-urine") Для определения белка в&nbsp;моче
+                li
+                  a(href="../reagent") Для гематологических анализаторов
+              p Прочее
+              ul
+                li
+                  span Приборы
+                li
+                  a(href="../expendable") Расходные материалы
+          div.catalog__items
+            div.row
+              div.catalog__item-wrapper
+                a(href="blend01").catalog__item
+                    img.catalog__item-img(src="/img/catalog/noimage.png" alt="УП-01")
+                    div.catalog__item-description
+                      p.catalog__item-title УП-01
+                      p.catalog__item-subtitle Устройство перемешивания
+              div.catalog__item-wrapper
+                a(href="blend101").catalog__item
+                  img.catalog__item-img(src="/img/catalog/noimage.png" alt="УП-1-01")
+                  div.catalog__item-description
+                    p.catalog__item-title УП-1-01
+                    p.catalog__item-subtitle Устройство перемешивания
+    include ../../partials/footer

@@ -1,0 +1,83 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width")
+    meta(name="description" content="Научно-производственное предприятие по разработке и производству контрольных и диагностических материалов.")
+    link(href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet")
+    link(rel="icon" type="image/png" href="/assets/img/favicon.png")
+    link(href='/css/style.css', type="text/css", rel="stylesheet")
+    title ГЕМОКОНТ | Медлакор С.-П.
+  body
+    include ../../../partials/header
+    main
+      div.container
+        p.breadcrumbs 
+          a(href="/") Главная
+          span &nbsp;&nbsp;>&nbsp;&nbsp;
+          a(href="../../") Каталог
+          span &nbsp;&nbsp;>&nbsp;&nbsp;
+          a(href="../") Контрольные и диагностические материалы для гемоглобинометрии
+          span &nbsp;&nbsp;>&nbsp;&nbsp;ГЕМОКОНТ
+        h1 ГЕМОКОНТ
+        div.row
+          div.product__img-wrapper
+            img(src="/img/catalog/Gemokont.jpg" alt="Гемоконт" onclick="this.nextElementSibling.style.display = 'block';").product__img
+            div(onclick="this.style.display = 'none';").product__zoom
+              img(src="/img/catalog/Gemokont.jpg" alt="Гемоконт")
+          div.product__meta
+            p.product__subtitle Набор контрольных растворов гемоглобина
+            p.product__number Кат. № 01.01.011, кат. № 01.01.012, кат. № 01.01.013
+            p.product__codes ТУ 9398-290-52208224-2010, код  ОКП 93 9816
+            p.product__documents
+              a(href="/reg/Gemokont2010.pdf" target="_blank").profuct__reg Регистрационное удостоверение № ФСР 2010/09036
+              br
+              a(href="/instr/Gemokont.pdf" target="_blank").profuct__instruction Инструкция по применению
+        div.product__description
+          p Набор контрольных растворов гемоглобина предназначен  для проведения  контроля правильности и воспроизводимости  результатов определения концентрации гемоглобина  унифицированным  гемиглобинцианидным  методом. Контрольный раствор гемоглобина расфасован во флаконы из полипропилена по 2,5 мл. Набор содержит 10 флаконов контрольного раствора гемоглобина.
+          p Набор выпускается в нескольких вариантах, отличающихся по комплектации:
+          div.product__cat-list
+            span.product__cat-number Кат. № 01.01.011
+            ul
+              li 5 флаконов с нормальным уровнем концентрации (норма)
+              li 4 флакона с низким уровнем концентрации  (патология)
+              li 1 флакон - калибратор (концентрация гемоглобина 150 г/л)
+          div.product__cat-list 
+            span.product__cat-number Кат. № 01.01.012
+            ul
+              li 5 флаконов - норма
+              li 5 флаконов - патология
+          div.product__cat-list 
+            span.product__cat-number Кат. № 01.01.013
+            ul
+              li 7 флаконов - норма
+              li 3 флакона - калибратора (с концентрацией гемоглобина  77; 130 и 150 г/л)
+          p Значения концентрации гемоглобина и контрольные пределы ( Х±2S) указаны в паспорте набора.
+          p Контрольные растворы гемоглобина и калибраторы аттестованы с использованием международного стандартного раствора  гемиглобинцианида CRM- 522, сертифицированного  Институтом референтных материалов и измерений IRMM European Commission Joint Research Centre.
+          p 
+            b Набор имеет следующие технические характеристики:
+          table
+            tr
+              td Коэффициент вариации результатов измерения концентрации гемоглобина
+              td не более 2%
+            tr
+              td Межфлаконная вариация
+              td не более 2%
+            tr
+              td Допустимый разброс результатов определения концентрации гемоглобина в разных наборах одной серии
+              td не более 2%
+            tr
+              td Количество исследований из одного флакона
+              td не менее 100
+            tr
+              td Срок хранения набора
+              td 12 месяцев
+            tr
+              td Температура хранения
+              td 2ºС - 25ºС
+            tr
+              td Срок хранения после вскрытия флакона
+              td не более 2 дней
+        
+    include ../../../partials/footer

@@ -1,0 +1,73 @@
+.product__img-wrapper
+  column(1/4)
+
+.product__img
+  display block
+  width 100%
+  border 2px solid blend(alpha($c-primary, 0.05),$c-white)
+  cursor zoom-in
+  border-radius 4px
+  box-shadow 0 0 8px 2px alpha($c-primary--darkest, 0.15)
+  &--zoomless
+    cursor default
+
+.product__meta
+  column(3/4)
+
+.product__subtitle
+  font-size 24px
+  line-height 32px
+  margin-bottom 12px
+  color $c-primary--dark
+
+.product__documents
+  margin-top 24px
+  line-height 28px
+
+.product__description
+  margin 24px 0 48px 0
+  p
+    margin 12px 0
+    &:first-child
+      margin-top 0
+  table
+    border-radius 4px
+    border-collapse collapse
+    tr
+      background-color blend(alpha($c-primary, 0.03),$c-white)
+    tr:nth-child(2n-1)
+      background-color blend(alpha($c-primary, 0.1),$c-white)
+    td
+      padding 12px
+  ul
+    margin-top 6px
+    margin-bottom 6px
+    padding-left 12px
+  li:before
+    content "\2022   "
+  ul ul li:before
+    content "-   "
+
+.product__cat-list
+  margin 12px 0
+
+.product__cat-number
+  font-weight 700
+
+.product__zoom
+  display none
+  position fixed
+  width 100%
+  height 100%
+  top 0
+  left 0
+  z-index 1000
+  background-color alpha($c-primary--darkest, 0.6)
+  cursor zoom-out
+  img
+    width 600px
+    height 600px  
+    position absolute
+    left calc(50% - 300px)
+    top calc(50% - 300px)
+    box-shadow 0 0 32px 0px alpha($c-primary--darkest, 0.5)

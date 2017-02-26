@@ -1,0 +1,44 @@
+.footer
+  text-align center
+  background-color blend(alpha($c-primary--dark, 0.85),$c-white)
+  color $c-white
+  a
+    color $c-white
+    &:hover
+      color $c-primary--lightest
+  
+.footer__logo
+  column(1/4)
+  padding-top 24px
+  font-size 0
+  line-height 0
+  text-align left
+  a
+    display inline-block
+    height 50px
+    font-size 16px
+    line-height 24px
+  img
+    display block
+    width 208px
+    height auto
+    margin-right auto
+
+.footer__contacts
+  column(1/4)
+  width 280px
+  float right
+  text-align left
+  padding-top 16px
+  padding-bottom 16px
+  font-size 12px
+  line-height 20px
+  
+.footer__menu
+  float left
+  text-align left
+  padding-top 40px
+  font-size 14px
+  li
+    display inline-block
+    margin-right 24px

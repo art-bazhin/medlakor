@@ -1,0 +1,56 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width")
+    meta(name="description" content="Научно-производственное предприятие по разработке и производству контрольных и диагностических материалов.")
+    link(href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet")
+    link(rel="icon" type="image/png" href="/assets/img/favicon.png")
+    link(href='/css/style.css', type="text/css", rel="stylesheet")
+    title Эр-контроль | Медлакор С.-П.
+  body
+    include ../../../partials/header
+    main
+      div.container
+        p.breadcrumbs 
+          a(href="/") Главная
+          span &nbsp;&nbsp;>&nbsp;&nbsp;
+          a(href="../../") Каталог
+          span &nbsp;&nbsp;>&nbsp;&nbsp;
+          a(href="../") Контрольные и диагностические материалы для гематологии
+          span &nbsp;&nbsp;>&nbsp;&nbsp;Эр-контроль
+        h1 Эр-контроль
+        div.row
+          div.product__img-wrapper
+            img(src="/img/catalog/noimage.png" alt="Эр-контроль").product__img.product__img--zoomless
+          div.product__meta
+            p.product__subtitle Набор контрольных суспензий эритроцитов
+            p.product__number Кат. № 02.01.01
+            p.product__codes ТУ 9398-262-52208224-2010, код  ОКП 93  9816 
+            p.product__documents
+              a(href="/reg/ERContr.pdf" target="_blank").profuct__reg Регистрационное удостоверение № ФСР 2010/09032
+              br
+              a(href="/instr/ERcontrInstr.pdf" target="_blank").profuct__instruction Инструкция по применению
+        div.product__description
+          p Набор контрольных суспензий эритроцитов предназначен для контроля правильности и воспроизводимости подсчета эритроцитов на гематологических анализаторах и в счетной камере Горяева. Набор "Эр-контроль" содержит 10 флаконов контрольной суспензии эритроцитов.      
+          p Набор содержит два уровня концентрации:
+          ul
+            li 5 флаконов с низким уровнем концентрации.  
+            li 5 флаконов с нормальным уровнем концентрации.
+          p Средние значения концентраций эритроцитов и контрольные пределы (Х±2S)  указаны в паспорте набора. Контрольная суспензия эритроцитов расфасована в полиэтиленовые флаконы по 2,5 мл. Суспензия готова для подсчета в камере Горяева (разведена в 200 раз относительно концентрации эритроцитов в крови). При подсчете эритроцитов на гематологических анализаторах  приготовление разведений следует производить согласно инструкции  по применению набора "Эр-контроль"
+          p 
+            b Характеристики набора:
+          table
+            tr
+              td Срок годности
+              td 12 месяцев
+            tr
+              td Температура хранения
+              td 10ºС - 25ºС
+            tr
+              td Срок хранения после вскрытия флакона
+              td не более 14 дней
+          p При хранении флаконы должны быть плотно закрыты и находиться в вертикальном положении. Замораживание не допускается!
+        
+    include ../../../partials/footer

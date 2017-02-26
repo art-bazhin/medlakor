@@ -1,0 +1,38 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width")
+    meta(name="description" content="Научно-производственное предприятие по разработке и производству контрольных и диагностических материалов.")
+    link(href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet")
+    link(rel="icon" type="image/png" href="/assets/img/favicon.png")
+    link(href='/css/style.css', type="text/css", rel="stylesheet")
+    title Медлакор С.-П.
+  body
+    include partials/header
+    main
+      div.tizer
+        div.container
+          h1.tizer__title Научно-производственное предприятие по&nbsp;разработке и&nbsp;производству контрольных и&nbsp;диагностических материалов
+          a(href="/catalog").tizer__button В каталог
+      div.about
+        div.container
+          p.about__text Научно-производственное предприятие ООО &laquo;Медлакор С.-П.&raquo; было создано на&nbsp;базе Всесоюзного научно-исследовательского и&nbsp;конструкторского института медицинской лабораторной техники (ВНИКИ МЛТ) в&nbsp;1991&nbsp;году, что обеспечило научный потенциал и&nbsp;основные направления деятельности предприятия. На&nbsp;предприятии разрабатываются и&nbsp;производятся контрольные и&nbsp;диагностические материалы для гематологических, биохимических исследований, анализа мочи, которые используются в&nbsp;работе клинико-диагностических лабораторий (КДЛ) медицинских учреждений всех уровней.
+      div.advantages
+        div.container
+          div.row
+            div.advantage.advantage--science
+              p.advantage__text Научный характер продукции предприятия определяет высокий уровень специалистов, которые занимаются разработкой и&nbsp;производством.
+            div.advantage.advantage--gost
+              p.advantage__text Все изделия ООО &laquo;Медлакор&nbsp;С.&nbsp;-П.&raquo; имеют регистрационные удостоверения и&nbsp;полностью соответствуют государственным стандартам.
+            div.advantage.advantage--lab
+              p.advantage__text Наши контрольные материалы используются ФСВОК, а&nbsp;также рядом региональных центров для проведения межлабораторного контроля качества.
+      div.products
+        div.container
+          div.row
+            div.products__image-wrapper
+              img(src="/img/products.jpg")
+            div.products__text-wrapper
+              p.products__text По&nbsp;результатам технических и&nbsp;медицинских испытаний в&nbsp;ведущих клиниках Москвы и&nbsp;<nobr>Санкт-Петербурга</nobr> изделия <nobr>ООО &laquo;Медлакор С.-П.&raquo;</nobr> разрешены Министерством здравоохранения для применения в&nbsp;медицинской практике. На&nbsp;предприятии внедрена интегрированная система менеджмента качества в&nbsp;соответствии с&nbsp;ГОСТ Р&nbsp;ИСО 9001&ndash;2008 (ИСО 9001:2008) и&nbsp;ГОСТ Р&nbsp;13485&ndash;2004 (ИСО 13485:2003).
+    include partials/footer

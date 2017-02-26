@@ -1,0 +1,112 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width")
+    meta(name="description" content="Научно-производственное предприятие по разработке и производству контрольных и диагностических материалов.")
+    link(href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet")
+    link(rel="icon" type="image/png" href="/assets/img/favicon.png")
+    link(href='/css/style.css', type="text/css", rel="stylesheet")
+    title Каталог | Медлакор С.-П.
+  body
+    include ../../partials/header
+    main
+      div.container
+        p.breadcrumbs 
+          a(href="../") Главная
+          span &nbsp;&nbsp;>&nbsp;&nbsp;
+          a(href="../") Каталог
+          span &nbsp;&nbsp;>&nbsp;&nbsp;Контрольные и диагностические материалы для исследования мочи
+        h1 Каталог
+        div.row
+          div.catalog__menu-wrapper
+            div.catalog__menu
+              p Контрольные и&nbsp;диагностические материалы
+              ul
+                li
+                  a(href="../hemoglobin") Для гемоглобинометрии
+                li
+                  a(href="../hematology") Для гематологии
+                li
+                  a(href="../biochemistry") Для клинической биохимии
+                li
+                  span Для исследования мочи
+              p Реагенты
+              ul
+                li
+                  a(href="../reagent-urine") Для определения белка в&nbsp;моче
+                li
+                  a(href="../reagent") Для гематологических анализаторов
+              p Прочее
+              ul
+                li
+                  a(href="../device") Приборы
+                li
+                  a(href="../expendable") Расходные материалы
+          div.catalog__items
+            div.row
+              div.catalog__item-wrapper
+                a(href="ssk").catalog__item
+                  img.catalog__item-img(src="/img/catalog/SSK.jpg" alt="БМ-контроль-ССК")
+                  div.catalog__item-description
+                    p.catalog__item-title БМ-контроль-ССК
+                    p.catalog__item-subtitle Набор контрольных растворов белков мочи 
+              div.catalog__item-wrapper
+                a(href="ssk-kal").catalog__item
+                  img.catalog__item-img(src="/img/catalog/SSKkalibrator.jpg" alt="БМ-контроль-ССК с калибратором")
+                  div.catalog__item-description
+                    p.catalog__item-title БМ-контроль-ССК с&nbsp;калибратором
+                    p.catalog__item-subtitle Набор контрольных растворов белков мочи
+              div.catalog__item-wrapper
+                a(href="ssk-plus").catalog__item
+                  img.catalog__item-img(src="/img/catalog/SSK+.jpg" alt="БМ-контроль-ССК + глюкоза и рН")
+                  div.catalog__item-description
+                    p.catalog__item-title БМ-контроль-ССК + глюкоза и&nbsp;рН
+                    p.catalog__item-subtitle Набор контрольных растворов белков мочи
+            div.row
+              div.catalog__item-wrapper
+                a(href="ssk-plus-kal").catalog__item
+                  img.catalog__item-img(src="/img/catalog/SSK+kalibr.jpg" alt="БМ-контроль-ССК + глюкоза и рН с калибратором")
+                  div.catalog__item-description
+                    p.catalog__item-title БМ-контроль-ССК + глюкоза и&nbsp;рН с&nbsp;калибратором
+                    p.catalog__item-subtitle Набор контрольных растворов белков мочи
+              div.catalog__item-wrapper
+                a(href="pgk").catalog__item
+                  img.catalog__item-img(src="/img/catalog/PGK.jpg" alt="БМ-контроль-ПГК")
+                  div.catalog__item-description
+                    p.catalog__item-title БМ-контроль-ПГК
+                    p.catalog__item-subtitle Набор контрольных растворов белков мочи
+              div.catalog__item-wrapper
+                a(href="pgk-plus").catalog__item
+                  img.catalog__item-img(src="/img/catalog/PGK+.jpg" alt="БМ-контроль-ПГК + глюкоза и рН")
+                  div.catalog__item-description
+                    p.catalog__item-title БМ-контроль-ПГК + глюкоза и&nbsp;рН
+                    p.catalog__item-subtitle Набор контрольных растворов белков мочи 
+            div.row
+              div.catalog__item-wrapper
+                a(href="pgk2").catalog__item
+                  img.catalog__item-img(src="/img/catalog/noimage.png" alt="БМ-контроль-ПГК-2")
+                  div.catalog__item-description
+                    p.catalog__item-title БМ-контроль-ПГК-2
+                    p.catalog__item-subtitle Набор контрольных растворов белков мочи
+              div.catalog__item-wrapper
+                a(href="pgk2-plus").catalog__item
+                  img.catalog__item-img(src="/img/catalog/noimage.png" alt="БМ-контроль-ПГК-2 + глюкоза и рН")
+                  div.catalog__item-description
+                    p.catalog__item-title БМ-контроль-ПГК-2 + глюкоза и рН
+                    p.catalog__item-subtitle Набор контрольных растворов белков мочи
+              div.catalog__item-wrapper
+                a(href="kmbh").catalog__item
+                  img.catalog__item-img(src="/img/catalog/KM-BX.jpg" alt="КМ-контроль-БХ")
+                  div.catalog__item-description
+                    p.catalog__item-title КМ-контроль-БХ
+                    p.catalog__item-subtitle Набор образцов контрольной мочи
+            div.row
+              div.catalog__item-wrapper
+                a(href="kmtp").catalog__item
+                  img.catalog__item-img(src="/img/catalog/KM-TP.jpg" alt="КМ-контроль-ТП")
+                  div.catalog__item-description
+                    p.catalog__item-title КМ-контроль-ТП
+                    p.catalog__item-subtitle Набор образцов контрольной мочи для тест-полосок
+    include ../../partials/footer

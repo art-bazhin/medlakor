@@ -1,0 +1,66 @@
+*
+  box-sizing border-box
+  
+html
+  background-color blend(alpha($c-primary--dark, 0.85),$c-white)
+  min-width 990px
+
+body
+  font-family $f-primary
+  background-color $c-white
+  font-weight 400
+  min-width 320px
+  font-size 16px
+  line-height 24px
+  color $c-primary--darkest
+
+input
+  &:focus
+    outline none
+
+button, select
+  outline none
+  border none
+  cursor pointer
+  background-color transparent
+
+p
+  margin 0
+  
+h1
+  margin 0
+  margin-bottom 24px
+  font-weight 700
+  font-size 32px
+  line-height 48px
+  color $c-primary
+
+h2
+  margin 0
+  font-weight 700
+  font-size 24px
+  line-height 32px
+
+h3
+  margin 0
+  font-weight 400
+  font-size 20px
+  line-height 24px
+
+a
+  text-decoration none
+  color $c-primary--light
+  &:hover, &:active
+    color $c-primary--lighter
+
+ul
+  padding 0
+  margin 0
+
+ol
+  padding 0
+  margin 0
+
+li
+  list-style none
+

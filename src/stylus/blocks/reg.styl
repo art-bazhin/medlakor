@@ -1,0 +1,33 @@
+.reg
+  column(1/2)
+  padding-bottom 16px
+  
+.reg__block
+  margin-bottom 16px
+  position relative
+  width 100%
+  min-height 60px
+  padding-left 64px
+
+.reg__block:before
+  content ""
+  display inline-block
+  height 60px
+  vertical-align middle
+  
+.reg__link
+  display inline-block
+  vertical-align middle
+  
+.reg__link--pdf:before
+  content ""
+  display block
+  width 48px
+  height 60px
+  background-image embedurl("../img/inline/icon-pdf.png")
+  background-size 100%
+  vertical-align middle
+  margin-right 16px
+  position absolute
+  top 0
+  left 0

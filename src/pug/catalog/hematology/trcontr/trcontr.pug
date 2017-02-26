@@ -1,0 +1,57 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width")
+    meta(name="description" content="Научно-производственное предприятие по разработке и производству контрольных и диагностических материалов.")
+    link(href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet")
+    link(rel="icon" type="image/png" href="/assets/img/favicon.png")
+    link(href='/css/style.css', type="text/css", rel="stylesheet")
+    title Тр-контроль | Медлакор С.-П.
+  body
+    include ../../../partials/header
+    main
+      div.container
+        p.breadcrumbs 
+          a(href="/") Главная
+          span &nbsp;&nbsp;>&nbsp;&nbsp;
+          a(href="../../") Каталог
+          span &nbsp;&nbsp;>&nbsp;&nbsp;
+          a(href="../") Контрольные и диагностические материалы для гематологии
+          span &nbsp;&nbsp;>&nbsp;&nbsp;Тр-контроль
+        h1 Тр-контроль
+        div.row
+          div.product__img-wrapper
+            img(src="/img/catalog/TRcontrol.jpg" alt="Тр-контроль" onclick="this.nextElementSibling.style.display = 'block';").product__img
+            div(onclick="this.style.display = 'none';").product__zoom
+              img(src="/img/catalog/TRcontrol.jpg" alt="Тр-контроль")
+          div.product__meta
+            p.product__subtitle Набор контрольных суспензий лейкоцитов
+            p.product__number Кат. № 02.01.03
+            p.product__codes ТУ 9398-263-52208224-2010, код ОКП 93 9816 
+            p.product__documents
+              a(href="/reg/TRContr.pdf" target="_blank").profuct__reg Регистрационное удостоверение № ФСР 2010/09033
+              br
+              a(href="/instr/TRcontrInstr.pdf" target="_blank").profuct__instruction Инструкция по применению
+        div.product__description
+          p Набор контрольных суспензий тромбоцитов предназначен для контроля правильности и воспроизводимости подсчета тромбоцитов на гематологических анализаторах и в счетной камере Горяева. Cодержит 10 флаконов контрольной суспензии тромбоцитов.
+          p Набор содержит два уровня концентрации:
+          ul
+            li 5 флаконов с низким уровнем концентрации (паталогия).  
+            li 5 флаконов с нормальным уровнем концентрации (норма).
+          p Средние значения концентраций тромбоцитов и контрольные пределы (Х±2S)  указаны в паспорте набора. Контрольная суспензия тромбоцитов расфасована в полипропиленовые флаконы по 2,5 мл. Контрольная суспензия готова к использованию.
+          p 
+            b Характеристики набора:
+          table
+            tr
+              td Срок годности
+              td 12 месяцев
+            tr
+              td Температура хранения
+              td 10ºС - 25ºС
+            tr
+              td Срок хранения после вскрытия флакона
+              td не более 14 дней
+          p При хранении флаконы должны быть плотно закрыты и находиться в вертикальном положении. Замораживание не допускается!
+    include ../../../partials/footer

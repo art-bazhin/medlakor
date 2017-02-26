@@ -1,0 +1,45 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width")
+    meta(name="description" content="Научно-производственное предприятие по разработке и производству контрольных и диагностических материалов.")
+    link(href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet")
+    link(rel="icon" type="image/png" href="/assets/img/favicon.png")
+    link(href='/css/style.css', type="text/css", rel="stylesheet")
+    title Контакты | Медлакор С.-П.
+  body
+    include ../partials/header
+    main
+      div.container
+        p.breadcrumbs 
+          a(href="../") Главная
+          span &nbsp;&nbsp;>&nbsp;&nbsp;Контакты
+        h1 Контакты
+        div.row
+          div.contacts__block
+            h3.contacts__title Адрес получения товаров
+            p 194100 г. Санкт-Петербург
+              br 
+              | Выборгская набережная д. 55
+              br
+              | территория ООО «Оккервиль»
+              br
+              | ООО «Медлакор С.-П.»
+          div.contacts__block
+            h3.contacts__title Адрес для корреспонденции
+            p 194100 г. Санкт-Петербург
+              br 
+              | ул. А. Матросова д. 4, корп 2, лит П
+              br
+              | ООО «Медлакор С.-П.»
+          div.contacts__block
+            h3.contacts__title Телефон/факс
+            p 8 (812) 295-87-55
+            p 8 (812) 646-72-23
+            h3.contacts__title E-mail
+            a(href="mailto:medlakor@medlakor.ru") medlakor@medlakor.ru
+      div.contacts__map
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=esxm36oBQwVM27BVwBOb4WlPEtzYIfJt&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+    include ../partials/footer
