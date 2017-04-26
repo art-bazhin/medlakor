@@ -16,12 +16,15 @@ var watch = require('gulp-watch');
 var clean = require('gulp-clean');
 var typograf = require('gulp-typograf');
 
+var ts = Math.floor(Date.now()/1000);
+
 //Build markup
 gulp.task('html', function() {
   gulp.src(['src/pug/**/*.pug', '!src/pug/partials/**/*.pug', '!src/pug/404/404.pug'])
     .pipe(plumber())
     .pipe(pug({
       pretty: true,
+      locals: {timestamp: ts}
     }))
     .pipe(typograf({
       lang: 'ru',
