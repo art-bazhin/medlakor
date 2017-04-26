@@ -37,16 +37,20 @@
       background-color blend(alpha($c-primary, 0.03),$c-white)
     tr:nth-child(2n-1)
       background-color blend(alpha($c-primary, 0.1),$c-white)
-    td
+    td, th
       padding 12px
+    th
+      background-color blend(alpha($c-primary--dark, 0.85),$c-white)
+      color $c-white
+      text-align left
   ul
     margin-top 6px
     margin-bottom 6px
     padding-left 12px
   li:before
-    content "\2022   "
+    content "\2022\00a0\00a0"
   ul ul li:before
-    content "-   "
+    content "-\00a0\00a0"
 
 .product__cat-list
   margin 12px 0

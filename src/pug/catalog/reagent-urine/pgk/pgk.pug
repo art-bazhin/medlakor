@@ -1,0 +1,67 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width")
+    meta(name="description" content="Научно-производственное предприятие по разработке и производству контрольных и диагностических материалов.")
+    link(href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet")
+    link(rel="icon" type="image/png" href="/assets/img/favicon.png")
+    link(href='/css/style.css', type="text/css", rel="stylesheet")
+    title БМ-НАБОР-ПГК | Медлакор С.-П.
+  body
+    include ../../../partials/header
+    main
+      div.container
+        p.breadcrumbs 
+          a(href="/") Главная
+          span &nbsp;&nbsp;>&nbsp;&nbsp;
+          a(href="../../") Каталог
+          span &nbsp;&nbsp;>&nbsp;&nbsp;
+          a(href="../") Реагенты для определения белка в моче
+          span &nbsp;&nbsp;>&nbsp;&nbsp;БМ-НАБОР-ПГК
+        h1 БМ-НАБОР-ПГК
+        div.row
+          div.product__img-wrapper
+            img(src="/img/catalog/NaborPGK.jpg" alt="БМ-НАБОР-ПГК" onclick="this.nextElementSibling.style.display = 'block';").product__img
+            div(onclick="this.style.display = 'none';").product__zoom
+              img(src="/img/catalog/NaborPGK.jpg" alt="БМ-НАБОР-ПГК")
+          div.product__meta
+            p.product__subtitle Набор реагентов для определения белка в моче колориметрическим методом с пирогаллоловым красным
+            p.product__number Кат № 04.02.02 (реагент 1х100), Кат № 04.02.03 (реагент 2х100)
+            p.product__codes ТУ 9398-222-52208224-2007, код ОКП 93 9816
+            p.product__documents
+              a(href="/reg/BMnaborPG.pdf" target="_blank").profuct__reg Регистрационное удостоверение № ФСР 2008/02548
+              br
+              a(href="/instr/BMnaborPGInstr.pdf" target="_blank").profuct__instruction Инструкция по применению
+        div.product__description
+          p Набор реагентов «БМ-НАБОР-ПГК» предназначен для определения белков в моче фотоколориметрическим методом с красителем пирогаллоловым красным при клинических лабораторных исследованиях в клинико-диагностических лабораториях.
+          p 
+            b Состав набора (Кат № 04.02.02):
+          table
+            tr
+              td Реагент
+              td 1х100 мл
+            tr
+              td Калибратор
+              td 1х2,0 мл
+          p 
+            b Состав набора (Кат № 04.02.03):
+          table
+            tr
+              td Реагент
+              td 2х100 мл
+            tr
+              td Калибратор
+              td 1х2,0 мл
+          p Калибратор содержит 1,0 г/л белка (70% альбумина и 30% глобулинов).
+          p
+            b Характеристики набора:
+          table
+            tr
+              td Срок годности
+              td 12 месяцев
+            tr
+              td Температура хранения
+              td 2ºС - 8ºС
+    include ../../../partials/footer

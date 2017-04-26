@@ -1,0 +1,53 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width")
+    meta(name="description" content="Научно-производственное предприятие по разработке и производству контрольных и диагностических материалов.")
+    link(href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet")
+    link(rel="icon" type="image/png" href="/assets/img/favicon.png")
+    link(href='/css/style.css', type="text/css", rel="stylesheet")
+    title БМ-контроль-ПГК | Медлакор С.-П.
+  body
+    include ../../../partials/header
+    main
+      div.container
+        p.breadcrumbs 
+          a(href="/") Главная
+          span &nbsp;&nbsp;>&nbsp;&nbsp;
+          a(href="../../") Каталог
+          span &nbsp;&nbsp;>&nbsp;&nbsp;
+          a(href="../") Контрольные и диагностические материалы для исследования мочи
+          span &nbsp;&nbsp;>&nbsp;&nbsp;БМ-контроль-ПГК
+        h1 БМ-контроль-ПГК
+        div.row
+          div.product__img-wrapper
+            img(src="/img/catalog/PGK.jpg" alt="БМ-контроль-ПГК" onclick="this.nextElementSibling.style.display = 'block';").product__img
+            div(onclick="this.style.display = 'none';").product__zoom
+              img(src="/img/catalog/PGK.jpg" alt="БМ-контроль-ПГК")
+          div.product__meta
+            p.product__subtitle Набор контрольных растворов белков мочи
+            p.product__number Кат. № 04.01.03
+            p.product__codes ТУ 9398-269-52208224-2010, код ОКП 93 9816
+            p.product__documents
+              a(href="/reg/BMcontr.pdf" target="_blank").profuct__reg Регистрационное удостоверение № ФСР 2010/08997
+              br
+              a(href="/instr/BMcontrPGInstr.pdf" target="_blank").profuct__instruction Инструкция по применению
+        div.product__description
+          p Набор контрольных растворов белков мочи «БМ-контроль-ПГК» предназначен для контроля правильности и воспроизводимости  результатов определения концентрации белков в моче методом с пирогаллоловым красным.
+          p Набор содержит 4 флакона контрольного раствора белков мочи четырех концентраций , в диапазоне: 0,1; 0,5; 1,0 и 1,5 г/л. Среднее значение концентрации белка и контрольные пределы (Х±2S)  указаны в паспорте набора. Контрольные растворы расфасованы в стеклянные флаконы по 2 мл. Определение количества белка в контрольных растворах следует проводить в соответствии с инструкцией к набору для определения белка в моче методом с пирогаллоловым красным.
+          p 
+            b Характеристики набора:
+          table
+            tr
+              td Срок годности
+              td 12 месяцев
+            tr
+              td Температура хранения
+              td 2ºС - 8ºС
+            tr
+              td Срок хранения после вскрытия флакона
+              td не более 14 дней
+          p При хранении флаконы должны быть плотно закрыты.
+    include ../../../partials/footer

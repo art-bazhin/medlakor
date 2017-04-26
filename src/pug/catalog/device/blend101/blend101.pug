@@ -1,0 +1,57 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width")
+    meta(name="description" content="Научно-производственное предприятие по разработке и производству контрольных и диагностических материалов.")
+    link(href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet")
+    link(rel="icon" type="image/png" href="/assets/img/favicon.png")
+    link(href='/css/style.css', type="text/css", rel="stylesheet")
+    title УП-1-01 | Медлакор С.-П.
+  body
+    include ../../../partials/header
+    main
+      div.container
+        p.breadcrumbs 
+          a(href="/") Главная
+          span &nbsp;&nbsp;>&nbsp;&nbsp;
+          a(href="../../") Каталог
+          span &nbsp;&nbsp;>&nbsp;&nbsp;
+          a(href="../") Приборы
+          span &nbsp;&nbsp;>&nbsp;&nbsp;УП-1-01
+        h1 УП-1-01
+        div.row
+          div.product__img-wrapper
+            img(src="/img/catalog/noimage.png" alt="УП-1-01").product__img.product__img--zoomless
+          div.product__meta
+            p.product__subtitle Устройство перемешивания
+            //-p.product__number Кат. № 05.01.01
+            p.product__codes ТУ 9443-002-52208224-01
+            //-p.product__documents
+              a(href="/reg/gemolizin-2.pdf" target="_blank").profuct__reg Регистрационное удостоверение № ФСР 2010/09035
+              br
+              a(href="/instr/gemolizin-2Instr.pdf" target="_blank").profuct__instruction Инструкция по применению
+        div.product__description
+          p Устройство предназначено для перемешивания жидкости в пробирках и флаконах, на концентрических и возвратно-поступательно вращающихся валках. Обеспечивает плавное и мягкое перемешивание.
+          p 
+            b Характеристики:
+          table
+            tr
+              td Габаритные размеры устройства
+              td 215x545x110 мм
+            tr
+              td Число оборотов валков
+              td 15 об/мин
+            tr 
+              td Амплитуда качания валков
+              td 20±1 мм
+            tr
+              td Максимально допустимая длина пробирки
+              td 150 мм
+            tr
+              td Масса
+              td 11 кг
+          p Время работы неограниченно и определяется потребителем. Устройство перемешивания работает от сети переменного тока с частотой 50 Гц и номинальным напряжением 220В. Мощность, потребляемая устройством не более 25ВА.
+        
+    include ../../../partials/footer

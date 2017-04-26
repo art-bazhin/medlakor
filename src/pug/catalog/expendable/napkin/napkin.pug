@@ -1,0 +1,36 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width")
+    meta(name="description" content="Научно-производственное предприятие по разработке и производству контрольных и диагностических материалов.")
+    link(href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet")
+    link(rel="icon" type="image/png" href="/assets/img/favicon.png")
+    link(href='/css/style.css', type="text/css", rel="stylesheet")
+    title Салфетка гематологическая (безворсовая) | Медлакор С.-П.
+  body
+    include ../../../partials/header
+    main
+      div.container
+        p.breadcrumbs 
+          a(href="/") Главная
+          span &nbsp;&nbsp;>&nbsp;&nbsp;
+          a(href="../../") Каталог
+          span &nbsp;&nbsp;>&nbsp;&nbsp;
+          a(href="../") Расходные материалы
+          span &nbsp;&nbsp;>&nbsp;&nbsp;Салфетка гематологическая (безворсовая)
+        h1 Салфетка гематологическая (безворсовая)
+        div.row
+          div.product__img-wrapper
+            img(src="/img/catalog/noimage.png" alt="Салфетка гематологическая (безворсовая)").product__img.product__img--zoomless
+          div.product__meta
+            //-p.product__subtitle Устройство перемешивания
+            p.product__number Кат. № 05.02.01
+            p.product__codes ТУ 9398-233-52208224-2009, код ОКП 93 9816 
+            p.product__documents
+              a(href="/reg/GemContr14-8.pdf" target="_blank").profuct__reg Регистрационное удостоверение № ФСР 2010/07210
+        div.product__description
+          p Салфетка предназначена для удаления жидкости с поверхности пипеток, наконечников дилюторов, дозаторов, пипеток Сали и др. Имеет два слоя: один слой влагоемкий, хорошо впитывает жидкость, второй слой влагонепроницаемый (защитный).
+          p Комплект содержит 20 салфеток.
+    include ../../../partials/footer

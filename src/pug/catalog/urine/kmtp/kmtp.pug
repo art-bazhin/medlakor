@@ -1,0 +1,58 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width")
+    meta(name="description" content="Научно-производственное предприятие по разработке и производству контрольных и диагностических материалов.")
+    link(href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet")
+    link(rel="icon" type="image/png" href="/assets/img/favicon.png")
+    link(href='/css/style.css', type="text/css", rel="stylesheet")
+    title КМ-контроль-ТП | Медлакор С.-П.
+  body
+    include ../../../partials/header
+    main
+      div.container
+        p.breadcrumbs 
+          a(href="/") Главная
+          span &nbsp;&nbsp;>&nbsp;&nbsp;
+          a(href="../../") Каталог
+          span &nbsp;&nbsp;>&nbsp;&nbsp;
+          a(href="../") Контрольные и диагностические материалы для исследования мочи
+          span &nbsp;&nbsp;>&nbsp;&nbsp;КМ-контроль-ТП
+        h1 КМ-контроль-ТП
+        div.row
+          div.product__img-wrapper
+            img(src="/img/catalog/KM-TP.jpg" alt="КМ-контроль-ТП" onclick="this.nextElementSibling.style.display = 'block';").product__img
+            div(onclick="this.style.display = 'none';").product__zoom
+              img(src="/img/catalog/KM-TP.jpg" alt="КМ-контроль-ТП")
+          div.product__meta
+            p.product__subtitle Контрольный материал для исследования мочи с использованием тест-полосок
+            p.product__number Кат. № 04.01.08
+            p.product__codes ТУ 9398-244-52208224-2011, код ОКП 93 9816 0212
+            p.product__documents
+              a(href="/reg/KMcontr.pdf" target="_blank").profuct__reg Регистрационное удостоверение № ФСР 2011/12138
+              br
+              a(href="/instr/KMcontrTCInstr.pdf" target="_blank").profuct__instruction Инструкция по применению
+        div.product__description
+          p Набор "КМ-контрольТП" предназначен для оценки качества результатов исследования мочи с использованием диагностических тест-полосок.
+          p Контролируемые показатели:
+          ul
+            li белок,	
+            li глюкоза,
+            li нитриты,
+            li pH,
+            li кетоны,
+            li кровь/эритроциты,
+            li удельная плотность.
+          p В состав набора входят 2 капельницы по 5 мл (норма и патология). Готов к использованию.     
+          p
+            b Характеристики набора:
+          table
+            tr
+              td Срок годности
+              td 12 месяцев
+            tr
+              td Температура хранения
+              td 2ºС - 8ºС
+    include ../../../partials/footer

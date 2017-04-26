@@ -1,0 +1,45 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width")
+    meta(name="description" content="Научно-производственное предприятие по разработке и производству контрольных и диагностических материалов.")
+    link(href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet")
+    link(rel="icon" type="image/png" href="/assets/img/favicon.png")
+    link(href='/css/style.css', type="text/css", rel="stylesheet")
+    title Промывающий раствор | Медлакор С.-П.
+  body
+    include ../../../partials/header
+    main
+      div.container
+        p.breadcrumbs 
+          a(href="/") Главная
+          span &nbsp;&nbsp;>&nbsp;&nbsp;
+          a(href="../../") Каталог
+          span &nbsp;&nbsp;>&nbsp;&nbsp;
+          a(href="../") Реагенты для гематологических анализаторов
+          span &nbsp;&nbsp;>&nbsp;&nbsp;Промывающий раствор
+        h1 Промывающий раствор
+        div.row
+          div.product__img-wrapper
+            img(src="/img/catalog/noimage.png" alt="Промывающий раствор").product__img.product__img--zoomless
+          div.product__meta
+            p.product__number Кат. № 05.01.03
+            p.product__codes ТУ 9398-246-52208224-2009, код ОКП 93 9816
+            p.product__documents
+              a(href="/instr/promInstr.pdf" target="_blank").profuct__instruction Инструкция по применению
+        div.product__description
+          p "Промывающий раствор" предназначен для очистки и предупреждения загрязнения элементов системы гематологических анализаторов, имеющих контакт  с кровью.
+          p Реагент адаптирован для работы на полуавтоматических и  автоматических гематологических анализаторах : DIGICELL-500, 800;  CELLTRAC 11, 12; HYCEL 520, 680; SYSMEX F-500, 520, 800, 820; CELL-DYN 300, 500, 900; ALCON AL-871, AL-903; METERTECH 300,  400, 500, 710; NIHON KONDEN-MEK 5103K, 5105K, 5108K, 6108K; AVL DC 500; МЕДОНИК СА 470, СА 490, СА 530 (Mimer); Кобас Минос CTE 6, 8, 11; Кобас Микрос 8.
+          p "Промывающий раствор" представляет собой буферный моющий состав, не содержит азида натрия. Реагент поставляется готовым к употреблению. Расфасовывается в полиэтиленовые емкости 1 и 10 л.   
+          p 
+            b Характеристики:
+          table
+            tr
+              td Срок годности 
+              td 12 месяцев
+            tr
+              td Температура хранения
+              td 18ºС - 25ºС
+    include ../../../partials/footer

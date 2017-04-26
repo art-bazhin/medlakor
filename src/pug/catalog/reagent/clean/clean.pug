@@ -1,0 +1,44 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width")
+    meta(name="description" content="Научно-производственное предприятие по разработке и производству контрольных и диагностических материалов.")
+    link(href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet")
+    link(rel="icon" type="image/png" href="/assets/img/favicon.png")
+    link(href='/css/style.css', type="text/css", rel="stylesheet")
+    title Очищающий раствор | Медлакор С.-П.
+  body
+    include ../../../partials/header
+    main
+      div.container
+        p.breadcrumbs 
+          a(href="/") Главная
+          span &nbsp;&nbsp;>&nbsp;&nbsp;
+          a(href="../../") Каталог
+          span &nbsp;&nbsp;>&nbsp;&nbsp;
+          a(href="../") Реагенты для гематологических анализаторов
+          span &nbsp;&nbsp;>&nbsp;&nbsp;Очищающий раствор
+        h1 Очищающий раствор
+        div.row
+          div.product__img-wrapper
+            img(src="/img/catalog/noimage.png" alt="Очищающий раствор").product__img.product__img--zoomless
+          div.product__meta
+            p.product__number Кат. № 05.01.04
+            p.product__documents
+              a(href="/instr/ochiInstr.pdf" target="_blank").profuct__instruction Инструкция по применению
+        div.product__description
+          p "Очищающий раствор" предназначен для очистки от белковых загрязнений апертурного отверстия измерительной ячейки анализатора. Состав: 1,5% раствор гипохлорита натрия.
+          p "Очищающий раствор" поставляется готовым к употреблению. Расфасовывается в полиэтиленовые емкости 0,25 л. Используется в соответствии с инструкцией к прибору.
+          p 
+            b Характеристики:
+          table
+            tr
+              td Срок годности 
+              td 12 месяцев
+            tr
+              td Температура хранения
+              td 15ºС - 30ºС
+          p После вскрытия упаковки реагент можно использовать в течение всего срока годности.
+    include ../../../partials/footer
