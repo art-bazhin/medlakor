@@ -1,0 +1,41 @@
+.new
+  padding 24px
+  margin-bottom 24px
+  background-color blend(alpha($c-primary, 0.05),$c-white)
+  border-radius 4px
+  box-shadow 0 0 8px 2px alpha($c-primary--darkest, 0.15)
+  p
+    margin 12px 0
+    &:first-child
+      margin-top 0
+  table
+    border-collapse collapse
+    box-shadow 0 0 8px 2px alpha($c-primary--darkest, 0.1)
+    margin-top 12px
+    margin-bottom 12px
+    tr
+      background-color blend(alpha($c-primary, 0.03),$c-white)
+    tr:nth-child(2n-1)
+      background-color blend(alpha($c-primary, 0.1),$c-white)
+    td, th
+      padding 12px
+    th
+      background-color blend(alpha($c-primary--dark, 0.85),$c-white)
+      color $c-white
+      text-align left
+  ul
+    margin-top 12px
+    margin-bottom 12px
+    padding-left 12px
+  li:before
+    content "\2022\00a0\00a0"
+  ul ul li:before
+    content "-\00a0\00a0"
+
+.new__date
+  font-weight 700
+  padding-bottom 6px
+  color $c-primary
+  border-bottom 1px solid blend(alpha($c-primary, 0.2),$c-white)
+  display inline-block
+  
