@@ -23,7 +23,9 @@ html(lang="ru")
         h1 Эр-контроль
         div.row
           div.product__img-wrapper
-            img(src="/img/catalog/noimage.png" alt="Эр-контроль").product__img.product__img--zoomless
+            img(src="/img/catalog/ERcontrol.jpg" alt="Эр-контроль" onclick="this.nextElementSibling.style.display = 'block';").product__img
+            div(onclick="this.style.display = 'none';").product__zoom
+              img(src="/img/catalog/ERcontrol.jpg" alt="Эр-контроль")
           div.product__meta
             p.product__subtitle Набор контрольных суспензий эритроцитов
             p.product__number Кат. № 02.01.01
