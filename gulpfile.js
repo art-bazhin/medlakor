@@ -155,5 +155,5 @@ gulp.task('default', ['watch', 'webserver']);
 
 //Build task
 gulp.task('build', function() {
-  runSequence('clean', 'min-inline', ['html', 'css', 'js', 'reg', 'instr', 'assets']);
+  runSequence('clean', 'min-inline', ['html', 'css', 'js', 'reg', 'instr', 'assets', 'notfound']);
 });
