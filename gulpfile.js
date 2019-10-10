@@ -65,9 +65,6 @@ gulp.task('css', function() {
     .pipe(gulp.dest('build/css/'));
 });
 
-//Build scripts
-gulp.task('js', ['js.menu', 'js.home', 'js.configurator']);
-
 //Build menu scripts
 gulp.task('js.menu', function() {
   gulp.src('src/js/menu.js')
@@ -83,16 +80,6 @@ gulp.task('js.home', function() {
     .pipe(concat(
       'home.js'))
     .pipe(uglify())
-    .pipe(gulp.dest('build/js/'));
-});
-
-//Build configurator page scripts
-gulp.task('js.configurator', function() {
-  gulp.src('src/js/configurator/*.js')
-    .pipe(plumber())
-    .pipe(concat(
-      'configurator.js'))
-    //.pipe(uglify())
     .pipe(gulp.dest('build/js/'));
 });
 
@@ -147,7 +134,7 @@ gulp.task('watch', function() {
   gulp.watch('src/pug/**/*.pug', ['html']);
   gulp.watch('src/reg/**/*', ['reg']);
   //gulp.watch('src/pug/404/404.pug', ['notfound']);
-  gulp.watch('src/js/**/*.js', ['js']);
+  //gulp.watch('src/js/**/*.js', ['js']);
 });
 
 //Development task
@@ -155,5 +142,5 @@ gulp.task('default', ['watch', 'webserver']);
 
 //Build task
 gulp.task('build', function() {
-  runSequence('clean', 'min-inline', ['html', 'css', 'js', 'reg', 'instr', 'assets', 'notfound']);
+  runSequence('clean', 'min-inline', ['html', 'css', 'reg', 'instr', 'assets', 'notfound']);
 });
